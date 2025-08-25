@@ -1,7 +1,5 @@
-// Year
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Reveal on scroll
 const revealEls = document.querySelectorAll('.reveal');
 const io = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -13,7 +11,6 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 revealEls.forEach(el => io.observe(el));
 
-// Collapse navbar after click (Bootstrap)
 const navLinks = document.querySelectorAll('#navContent .nav-link');
 const navCollapse = document.getElementById('navContent');
 navLinks.forEach(link => link.addEventListener('click', () => {
@@ -21,7 +18,6 @@ navLinks.forEach(link => link.addEventListener('click', () => {
   if (isShown) new bootstrap.Collapse(navCollapse).hide();
 }));
 
-// Theme toggle (persist in localStorage)
 const root = document.documentElement;
 const themeBtn = document.getElementById('themeToggle');
 const saved = localStorage.getItem('theme');
