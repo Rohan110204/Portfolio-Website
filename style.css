@@ -13,8 +13,6 @@
 }
 
 
-
-/* Light theme */
 :root.light {
   --bg-1: #f7f6ff;
   --bg-2: #ffffff;
@@ -131,5 +129,4 @@ section { position: relative; padding: 84px 0; z-index: 1; }
 
 footer { color: var(--muted); padding: 30px 0; border-top: 1px solid var(--border); }
 
-/* Back to top button */
 #backToTop { position: relative; }
